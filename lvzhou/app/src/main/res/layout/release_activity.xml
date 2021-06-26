@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/release_btn"
+        android:layout_below="@+id/title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_describe"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:background="#8FF1ECEC"
+                android:gravity="top"
+                android:hint="请输入描述"
+                android:padding="5dp"
+                android:textColor="@color/color_333333"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/select_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_add_image" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="分类"
+                android:textColor="@color/color_333333"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp">
+
+                <RadioButton
+                    android:id="@+id/radio_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="时尚"
+                    android:textColor="@color/color_333333"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/radio_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="雕塑"
+                    android:textColor="@color/color_333333"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/radio_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="舞蹈"
+                    android:textColor="@color/color_333333"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/radio_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="动漫"
+                    android:textColor="@color/color_333333"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/radio_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="饮食"
+                    android:textColor="@color/color_333333"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/radio_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="民俗"
+                    android:textColor="@color/color_333333"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/radio_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="体育"
+                    android:textColor="@color/color_333333"
+                    android:textSize="16dp" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/release_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_fed952"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="发布"
+        android:textColor="@color/picture_color_white"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+</RelativeLayout>
